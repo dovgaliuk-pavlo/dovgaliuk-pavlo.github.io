@@ -18,19 +18,21 @@
    )
   )
 
-(define (_GCD a b depth)
+(define depth 0)
+(define (_GCD a b)
+  (set! depth (+ depth 1))
   (cond ((= 0 (remainder b a)) (display a))
         ((= 0 (remainder a b)) (display b))
-        ((>= b a) (_GCD a (mod b a) (+ 1 depth)))
-        ((>= a b) (_GCD (mod a b) b (+ 1 depth)))
+        ((>= b a) (_GCD a (mod b a)))
+        ((>= a b) (_GCD (mod a b) b))
    )
-  (display "\nDepth: ")
-  (display depth)
  )
 
 
 (display "\nMy GSD realisation: ")
-(_GCD m n 1)
+(_GCD m n)
+(display "\nDepth: ")
+(display depth)
 
 (display "\nInbuild GSD realisation: ")
 (GCD m n)
