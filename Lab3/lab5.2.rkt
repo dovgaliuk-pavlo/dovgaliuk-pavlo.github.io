@@ -1,0 +1,15 @@
+(display "Довгалюк Павло ІПЗ-41. Лаб 1. Варіант 5. Частина 2.\n")
+(display "Your number: ")
+(define n (read))
+
+(define (f n)
+  (display (remainder n 10))
+  (display " ")
+  (if (= 0 (- n (remainder n 10)))
+      (display "")
+      (f (/ (- n (remainder n 10)) 10))
+   )
+ )
+
+(display "Reversed number: ")
+(f n)
