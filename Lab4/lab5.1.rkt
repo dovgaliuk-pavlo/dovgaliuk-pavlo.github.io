@@ -3,7 +3,7 @@
 (display "Довгалюк Павло ІПЗ-41. Лаб 4. Варіант 5. Частина 1.\n")
 
 (define x 2)
-(define n 5)
+(define n 8)
 
 ; creation
 (define (getListPowers x i n)

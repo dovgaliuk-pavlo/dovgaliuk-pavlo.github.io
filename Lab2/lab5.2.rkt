@@ -15,7 +15,7 @@
    )
   (+ 1 (chain_iter acc))
 )
-(define acc 0.001)
+(define acc 0.1)
 (display "Answer: ")
 (chain acc)
 (display "\nAccuracy: ")

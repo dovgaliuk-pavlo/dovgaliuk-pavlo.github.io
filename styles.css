@@ -12,12 +12,15 @@
     display: block;
     padding: .4em .4em .4em .8em;
     margin: .5em 0 .5em 2.5em;
-    background: #D3D4DA;
+    background: #D3DBE7;
     color: #444;
     text-decoration: none;
     transition: all .3s ease-out;
 }
-.rectangle a:hover {background: #DCDDE1;}
+.rectangle a:hover {
+    background: #9097A2;
+    margin: 10px 0 10px 10px;
+}
 .rectangle a:before {
     content: counter(li);
     counter-increment: li;
@@ -57,7 +60,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #E0E7F3;
+    background-color: #E5ECF8;
     line-height: 1;
     color: #231E20;
 }
@@ -68,7 +71,9 @@ a {
 }
 
 .container {
-    padding: 10px 20px;
+    padding: 0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
+    min-width: 900px;
 }
 
 h1 {
@@ -82,9 +87,8 @@ h1 {
 }
 .reportHead {
     text-align: center;
-    background-color: #D7DEEA;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    background: radial-gradient(#D0D8E5, #ECF3FF);
+    border-radius: 100%;
     padding: 10px;
     margin-bottom: 7px;
 }
@@ -95,15 +99,4 @@ h1 {
 
 .labStateUncompleted  {
     background-color: #FF362F;
-}
-
-.bottomPlate{
-    text-align: center;
-    background-color: #D7DEEA;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding-top: 0;
-    margin: auto;
-    width:100%;
-    height: 28px;
 }
